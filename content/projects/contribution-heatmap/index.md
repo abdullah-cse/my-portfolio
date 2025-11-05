@@ -9,7 +9,7 @@ keywords: ["flutter", "dart", "heatmap", "widget", "performance"]
 tags: ["Flutter", "Dart", "Open Source", "Widget"]
 
 # Project Details
-image: "https://via.placeholder.com/1200x630/3b82f6/ffffff?text=Contribution+Heatmap"
+image: "featured.jpg"
 imageAlt: "GitHub-style contribution heatmap widget for Flutter"
 
 # Project Links

@@ -1,8 +1,12 @@
 <article class="post-card">
   <a href="{{ .Permalink }}" class="post-card-link">
-    {{ if .Params.image }}
+    {{ with .Params.image }}
     <div class="post-card-image">
-      <img src="{{ .Params.image }}" alt="{{ .Params.imageAlt | default .Title }}" loading="lazy">
+      {{ $src := . | relURL }}
+      {{ with $.Resources.GetMatch . }}
+      {{ $src = .RelPermalink }}
+      {{ end }}
+      <img src="{{ $src }}" alt="{{ $.Params.imageAlt | default $.Title }}" loading="lazy">
     </div>
     {{ end }}
 

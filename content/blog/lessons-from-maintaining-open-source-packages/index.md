@@ -8,7 +8,7 @@ keywords: ["open-source", "flutter", "maintenance", "community", "best-practices
 tags: ["Open Source", "Flutter", "Community"]
 categories: ["Development"]
 
-image: "https://via.placeholder.com/1200x630/8b5cf6/ffffff?text=Open+Source+Lessons"
+image: "featured.jpg"
 imageAlt: "Open source development and package maintenance"
 
 author: "MD ABDULLAH"
