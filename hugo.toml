@@ -182,5 +182,5 @@ enableGitInfo = false
 
 # Output formats
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
