@@ -1,0 +1,52 @@
+{{ $author := .Params.author | default site.Params.author }}
+{{ $authorImage := .Params.authorImage | default site.Params.authorImage }}
+{{ $authorTagline := .Params.authorTagline | default site.Params.authorTagline }}
+
+<div class="author-card">
+  <div class="author-info">
+    {{ if $authorImage }}
+    <img 
+      class="author-avatar" 
+      src="{{ $authorImage }}" 
+      alt="{{ $author }}"
+      width="96" 
+      height="96"
+    >
+    {{ end }}
+    
+    <div class="author-details">
+      <div class="author-label">Written by</div>
+      <div class="author-name">{{ $author }}</div>
+      
+      {{ if $authorTagline }}
+      <div class="author-tagline">{{ $authorTagline }}</div>
+      {{ end }}
+      
+      {{ if site.Params.social }}
+      <div class="author-social">
+        {{ range site.Params.social }}
+          {{ if .url }}
+          {{/* Convert name to lowercase and replace spaces with hyphens for icon matching */}}
+          {{ $iconName := lower .name | replaceRE " " "-" }}
+          {{ $iconPath := printf "icons/%s.svg" $iconName }}
+          {{ $iconResource := resources.Get $iconPath }}
+          
+          {{ if $iconResource }}
+          <a 
+            href="{{ .url }}" 
+            target="_blank" 
+            rel="me noopener noreferrer"
+            aria-label="{{ .name }}"
+            title="{{ .name }}"
+            class="social-link"
+          >
+            {{ $iconResource.Content | safeHTML }}
+          </a>
+          {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

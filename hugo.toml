@@ -8,179 +8,212 @@ enableRobotsTXT = true
 enableGitInfo = false
 
 [pagination]
-  pagerSize = 10
+pagerSize = 10
 
 # Markup settings for better SEO
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = false
-  [markup.highlight]
-    style = "monokai"
-    lineNos = false
-    lineNumbersInTable = false
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = false
+[markup.highlight]
+style = "monokai"
+lineNos = false
+lineNumbersInTable = false
+[markup.tableOfContents]
+endLevel = 3
+ordered = false
+startLevel = 2
 
 # Taxonomies
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+tag = "tags"
+category = "categories"
 
 # Site parameters
 [params]
-  description = "Fast and Beautiful App Developer"
-  author = "MD ABDULLAH"
-  image = "/images/avatar.png"
-  twitter = "@abdullahpdb"
-  
-  # Table of Contents
-  showTOC = true
-  
-  # Cursor Effect
-  enableCursorEffect = true  # Set to false to disable the smoky cursor effect
-  
-  # Hero Section
-  avatar = "/images/avatar.png"
-  hero_title = "Hi, I'm MD ABDULLAH"
-  hero_subtitle = "Flutter Developer crafting high-performance mobile experiences and open-source packages"
-  
-  [params.hero_cta]
-    primary_text = "View My Work"
-    primary_url = "/projects/"
-    secondary_text = "Read My Blog"
-    secondary_url = "/blog/"
-  
-  # Skills Section
-  [[params.skills]]
-    name = "Flutter Development"
-    icon = "📱"
-    description = "Building cross-platform mobile apps with Flutter and Dart"
-    items = ["Flutter", "Dart", "Custom Widgets", "State Management", "Firebase"]
-  
-  [[params.skills]]
-    name = "Package Development"
-    icon = "📦"
-    description = "Creating reusable, well-documented packages for the community"
-    items = ["pub.dev", "API Design", "Documentation", "Testing", "CI/CD"]
-  
-  [[params.skills]]
-    name = "Performance Optimization"
-    icon = "⚡"
-    description = "Building blazing-fast apps with custom rendering"
-    items = ["Custom RenderBox", "Canvas API", "Profiling", "Memory Management"]
-  
-  [[params.skills]]
-    name = "Open Source"
-    icon = "🌟"
-    description = "Contributing to and maintaining open-source projects"
-    items = ["Git", "GitHub", "Code Review", "Community Management"]
-  
-  # Tech Stack Section
-  [[params.tech_stack]]
-    category = "Languages"
-    technologies = ["Dart", "Python", "C++", "JavaScript"]
-  
-  [[params.tech_stack]]
-    category = "Frameworks & Tools"
-    technologies = ["Flutter", "Firebase", "Git", "VS Code", "Android Studio"]
-  
-  [[params.tech_stack]]
-    category = "Specializations"
-    technologies = ["Custom Rendering", "Performance Optimization", "Package Architecture", "State Management"]
-  
-  [[params.tech_stack]]
-    category = "Platforms"
-    technologies = ["Android", "iOS", "Web", "Linux", "macOS", "Windows"]
-  
-  # Featured Projects
-  [[params.featured_projects]]
-    name = "Contribution Heatmap"
-    description = "A high-performance, GitHub-like contribution heatmap widget for Flutter. Built with custom RenderBox for maximum efficiency."
-    image = "/images/projects/contribution-heatmap.jpg"
-    technologies = ["Flutter", "Dart", "Custom RenderBox", "Canvas API"]
-    demo_url = ""
-    github_url = "https://github.com/abdullah-cse/contribution_heatmap"
-  
-  [[params.featured_projects]]
-    name = "Streak Calculator"
-    description = "High-performance Dart package for tracking daily, weekly, and monthly streaks with custom goals and flexible configurations."
-    image = "/images/projects/streak-calculator.jpg"
-    technologies = ["Dart", "Algorithms", "Date Handling"]
-    demo_url = ""
-    github_url = "https://github.com/abdullah-cse/streak_calculator"
-  
-  [[params.featured_projects]]
-    name = "Lucide Flutter"
-    description = "Maintaining the Flutter package for Lucide icons, ensuring developers have access to beautiful, consistent icons."
-    image = "/images/projects/lucide-flutter.jpg"
-    technologies = ["Flutter", "Dart", "Icons", "Package Maintenance"]
-    demo_url = ""
-    github_url = "https://github.com/abdullah-cse/lucide-flutter"
-  
-  # Projects page URL
-  projects_page_url = "/projects/"
-  
-  # Giscus Comments Configuration
-  [params.giscus]
-    enabled = false  # Set to true when you set up Giscus
-    repo = "abdullah-cse/your-repo"
-    repo_id = "R_xxxxxxxxxxxxx"
-    category = "General"
-    category_id = "DIC_xxxxxxxxxxxxx"
-    mapping = "pathname"
-    strict = "0"
-    reactions_enabled = "1"
-    emit_metadata = "0"
-    input_position = "bottom"
-    theme = "preferred_color_scheme"
-    lang = "en"
-    loading = "lazy"
+description = "Fast and Beautiful App Developer" # Used in meta tags
+author = "MD ABDULLAH"
+image = "/images/avatar.png" # Used in meta tags
+twitter = "@abdullahpdb" # Used in meta tags
+authorImage = "/images/avatar.png" # Used in every blog post author section
+authorTagline = "Father of 2, App Developer, Tech Enthusiast" # Used in every blog post author section
+
+
+# Table of Contents
+showTOC = true
+
+# Cursor Effect
+enableCursorEffect = true # Set to false to disable the smoky cursor effect
+
+# Hero Section
+avatar = "/images/avatar.png"
+hero_title = "Hi, I'm MD ABDULLAH"
+hero_subtitle = "Flutter Developer crafting high-performance mobile experiences and open-source packages"
+
+[params.hero_cta]
+primary_text = "View My Work"
+primary_url = "/projects/"
+secondary_text = "Read My Blog"
+secondary_url = "/blog/"
+
+# Skills Section
+[[params.skills]]
+name = "Flutter Development"
+icon = "📱"
+description = "Building cross-platform mobile apps with Flutter and Dart"
+items = ["Flutter", "Dart", "Custom Widgets", "State Management", "Firebase"]
+
+[[params.skills]]
+name = "Package Development"
+icon = "📦"
+description = "Creating reusable, well-documented packages for the community"
+items = ["pub.dev", "API Design", "Documentation", "Testing", "CI/CD"]
+
+[[params.skills]]
+name = "Performance Optimization"
+icon = "⚡"
+description = "Building blazing-fast apps with custom rendering"
+items = ["Custom RenderBox", "Canvas API", "Profiling", "Memory Management"]
+
+[[params.skills]]
+name = "Open Source"
+icon = "🌟"
+description = "Contributing to and maintaining open-source projects"
+items = ["Git", "GitHub", "Code Review", "Community Management"]
+
+# Tech Stack Section
+[[params.tech_stack]]
+category = "Languages"
+technologies = ["Dart", "Python", "C++", "JavaScript"]
+
+[[params.tech_stack]]
+category = "Frameworks & Tools"
+technologies = ["Flutter", "Firebase", "Git", "VS Code", "Android Studio"]
+
+[[params.tech_stack]]
+category = "Specializations"
+technologies = [
+  "Custom Rendering",
+  "Performance Optimization",
+  "Package Architecture",
+  "State Management",
+]
+
+[[params.tech_stack]]
+category = "Platforms"
+technologies = ["Android", "iOS", "Web", "Linux", "macOS", "Windows"]
+
+# Featured Projects
+[[params.featured_projects]]
+name = "Contribution Heatmap"
+description = "A high-performance, GitHub-like contribution heatmap widget for Flutter. Built with custom RenderBox for maximum efficiency."
+image = "/images/projects/contribution-heatmap.jpg"
+technologies = ["Flutter", "Dart", "Custom RenderBox", "Canvas API"]
+demo_url = ""
+github_url = "https://github.com/abdullah-cse/contribution_heatmap"
+
+[[params.featured_projects]]
+name = "Streak Calculator"
+description = "High-performance Dart package for tracking daily, weekly, and monthly streaks with custom goals and flexible configurations."
+image = "/images/projects/streak-calculator.jpg"
+technologies = ["Dart", "Algorithms", "Date Handling"]
+demo_url = ""
+github_url = "https://github.com/abdullah-cse/streak_calculator"
+
+[[params.featured_projects]]
+name = "Lucide Flutter"
+description = "Maintaining the Flutter package for Lucide icons, ensuring developers have access to beautiful, consistent icons."
+image = "/images/projects/lucide-flutter.jpg"
+technologies = ["Flutter", "Dart", "Icons", "Package Maintenance"]
+demo_url = ""
+github_url = "https://github.com/abdullah-cse/lucide-flutter"
+
+# Projects page URL
+projects_page_url = "/projects/"
+
+# Giscus Comments Configuration
+[params.giscus]
+enabled = false                   # Set to true when you set up Giscus
+repo = "abdullah-cse/your-repo"
+repo_id = "R_xxxxxxxxxxxxx"
+category = "General"
+category_id = "DIC_xxxxxxxxxxxxx"
+mapping = "pathname"
+strict = "0"
+reactions_enabled = "1"
+emit_metadata = "0"
+input_position = "bottom"
+theme = "preferred_color_scheme"
+lang = "en"
+loading = "lazy"
 
 # Main menu
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
-    weight = 2
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 3
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 4
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 2
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 3
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 4
 
 # Privacy settings (GDPR compliant)
 [privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    disable = false
-    anonymizeIP = true
-    respectDoNotTrack = true
-  [privacy.instagram]
-    disable = false
-    simple = true
-  [privacy.x]
-    disable = false
-    enableDNT = true
-    simple = true
-  [privacy.vimeo]
-    disable = false
-    simple = true
-  [privacy.youtube]
-    disable = false
-    privacyEnhanced = true
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = false
+anonymizeIP = true
+respectDoNotTrack = true
+[privacy.instagram]
+disable = false
+simple = true
+[privacy.x]
+disable = false
+enableDNT = true
+simple = true
+[privacy.vimeo]
+disable = false
+simple = true
+[privacy.youtube]
+disable = false
+privacyEnhanced = true
 
 # Output formats
 [outputs]
-  home = ["HTML", "RSS"]
-  section = ["HTML", "RSS"]
+home = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
+
+# Social links
+[[params.social]]
+name = "link"
+url = "https://typefast.app?utm_source=abdullah&utm_medium=referral&utm_campaign=website_referral"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/abdullah-cse"
+
+[[params.social]]
+name = "x"
+url = "https://x.com/abdullahPDB"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/md-abdullah-abb635232/"
+
+[[params.social]]
+name = "youtube"
+url = "https://youtube.com/@fixit_dart"
+
+[[params.social]]
+name = "telegram"
+url = "https://t.me/abdullahcse"
