@@ -12,17 +12,17 @@ pagerSize = 10
 
 # Markup settings for better SEO
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = false
-[markup.highlight]
-style = "monokai"
-lineNos = false
-lineNumbersInTable = false
-[markup.tableOfContents]
-endLevel = 3
-ordered = false
-startLevel = 2
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    lineNumbersInTable = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 
 # Taxonomies
 [taxonomies]

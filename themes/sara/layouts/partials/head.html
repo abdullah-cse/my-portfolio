@@ -97,8 +97,9 @@
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-<!-- Styles -->
-{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+{{- $mainCSS := resources.Get "css/main.css" -}}
+{{- $syntaxCSS := resources.Get "css/syntax.css" -}}
+{{- $css := slice $mainCSS $syntaxCSS | resources.Concat "css/bundle.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <!-- Performance -->
