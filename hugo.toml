@@ -149,22 +149,38 @@ loading = "lazy"
 
 # Main menu
 [menu]
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-[[menu.main]]
-name = "Blog"
-url = "/blog/"
-weight = 2
-[[menu.main]]
-name = "Projects"
-url = "/projects/"
-weight = 3
-[[menu.main]]
-name = "About"
-url = "/about/"
-weight = 4
+  # Header menu
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+    
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+
+  # Footer menu
+  [[menu.footer]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 1
+
+  [[menu.footer]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
 
 # Privacy settings (GDPR compliant)
 [privacy]

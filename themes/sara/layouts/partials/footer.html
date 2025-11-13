@@ -4,7 +4,7 @@
       <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
       <nav aria-label="Footer navigation">
         <ul class="footer-links">
-          {{ range .Site.Menus.main }}
+          {{ range .Site.Menus.footer }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
