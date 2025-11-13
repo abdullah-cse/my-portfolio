@@ -1,4 +1,4 @@
-baseURL = "https://abdullah.bd"
+baseURL = "https://abdullah.com.bd"
 languageCode = "en-us"
 title = "MD ABDULLAH"
 theme = "sara"
@@ -70,12 +70,6 @@ description = "Creating reusable, well-documented packages for the community"
 items = ["pub.dev", "API Design", "Documentation", "Testing", "CI/CD"]
 
 [[params.skills]]
-name = "Performance Optimization"
-icon = "⚡"
-description = "Building blazing-fast apps with custom rendering"
-items = ["Custom RenderBox", "Canvas API", "Profiling", "Memory Management"]
-
-[[params.skills]]
 name = "Open Source"
 icon = "🌟"
 description = "Contributing to and maintaining open-source projects"
@@ -84,20 +78,12 @@ items = ["Git", "GitHub", "Code Review", "Community Management"]
 # Tech Stack Section
 [[params.tech_stack]]
 category = "Languages"
-technologies = ["Dart", "Python", "C++", "JavaScript"]
+technologies = ["Dart", "C", "C++", "C#", "JavaScript", "HTML", "CSS"]
 
 [[params.tech_stack]]
 category = "Frameworks & Tools"
-technologies = ["Flutter", "Firebase", "Git", "VS Code", "Android Studio"]
+technologies = ["Flutter", "Firebase", "Git", "Hugo", "VS Code", "Android Studio"]
 
-[[params.tech_stack]]
-category = "Specializations"
-technologies = [
-  "Custom Rendering",
-  "Performance Optimization",
-  "Package Architecture",
-  "State Management",
-]
 
 [[params.tech_stack]]
 category = "Platforms"
@@ -120,29 +106,23 @@ technologies = ["Dart", "Algorithms", "Date Handling"]
 demo_url = ""
 github_url = "https://github.com/abdullah-cse/streak_calculator"
 
-[[params.featured_projects]]
-name = "Lucide Flutter"
-description = "Maintaining the Flutter package for Lucide icons, ensuring developers have access to beautiful, consistent icons."
-image = "/images/projects/lucide-flutter.jpg"
-technologies = ["Flutter", "Dart", "Icons", "Package Maintenance"]
-demo_url = ""
-github_url = "https://github.com/abdullah-cse/lucide-flutter"
+
 
 # Projects page URL
 projects_page_url = "/projects/"
 
 # Giscus Comments Configuration
 [params.giscus]
-enabled = false                   # Set to true when you set up Giscus
-repo = "abdullah-cse/your-repo"
-repo_id = "R_xxxxxxxxxxxxx"
-category = "General"
-category_id = "DIC_xxxxxxxxxxxxx"
+enabled = true                   # Set to true when you set up Giscus
+repo = "abdullah-cse/abdullah-bd"
+repo_id = "R_kgDOQP5s_Q"
+category = "Announcements"
+category_id = "DIC_kwDOQP5s_c4CxvLk"
 mapping = "pathname"
 strict = "0"
 reactions_enabled = "1"
 emit_metadata = "0"
-input_position = "bottom"
+input_position = "top"
 theme = "preferred_color_scheme"
 lang = "en"
 loading = "lazy"
